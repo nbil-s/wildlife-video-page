@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Save Our Wildlife — a conservation campaign promoting wildlife protection and habitat preservation.">
+  <title>Save Our Wildlife | Conservation Campaign</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <p class="site-tagline">Wildlife Conservation Organization</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" role="main">
+    <section class="hero" aria-labelledby="page-heading">
+      <h1 id="page-heading">Save Our Wildlife</h1>
+
+      <div class="video-section">
+        <div id="video-wrapper" class="video-wrapper">
+          <video
+            id="wildlife-video"
+            class="wildlife-video"
+            controls
+            preload="metadata"
+            width="960"
+            height="540"
+          >
+            <source src="media/wildlife.mp4" type="video/mp4">
+            <p>
+              Your browser does not support HTML5 video.
+              <a href="media/wildlife.mp4">Download the wildlife conservation video</a>.
+            </p>
+          </video>
+        </div>
+
+        <div class="video-controls" role="group" aria-label="Video playback controls">
+          <button
+            id="toggle-video-btn"
+            type="button"
+            class="btn btn-primary"
+            aria-controls="video-wrapper"
+            aria-expanded="true"
+          >
+            Hide Video
+          </button>
+        </div>
+
+        <article class="video-description" aria-labelledby="description-heading">
+          <h2 id="description-heading" class="visually-hidden">About this campaign</h2>
+          <p>
+            Our planet's wildlife faces unprecedented threats from habitat loss, climate change,
+            and poaching. This short film highlights the beauty of endangered species and the
+            urgent need to protect their natural habitats. Join us in safeguarding biodiversity
+            for future generations — every action counts.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Wildlife Conservation Organization. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/video-controls.js"></script>
+</body>
+</html>
