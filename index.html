@@ -3,31 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Save Our Wildlife promotional video page">
-  <title>Save Our Wildlife</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Save Our Wildlife a conservation campaign promoting wildlife protection and habitat preservation.">
+  <title>Save Our Wildlife | Conservation Campaign</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main class="page" aria-labelledby="page-title">
-    <h1 id="page-title">Save Our Wildlife</h1>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <section class="video-section" aria-label="Wildlife promotional video">
-      <video id="wildlifeVideo" controls preload="metadata" aria-describedby="videoDescription">
-        <source src="wildlife.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <p class="site-tagline">Wildlife Conservation Organization</p>
+    </div>
+  </header>
 
-      <p id="videoDescription" class="description">
-        Protecting natural habitats today helps wildlife thrive for generations to come.
-      </p>
+  <main id="main-content" class="container" role="main">
+    <section class="hero" aria-labelledby="page-heading">
+      <h1 id="page-heading">Save Our Wildlife</h1>
 
-      <button id="videoActionBtn" type="button" aria-controls="wildlifeVideo" aria-label="Play video">
-        Play Video
-      </button>
-      <p id="statusMessage" class="status" aria-live="polite"></p>
+      <div class="video-section">
+        <div id="video-wrapper" class="video-wrapper">
+          <video
+            id="wildlife-video"
+            class="wildlife-video"
+            controls
+            preload="metadata"
+            playsinline
+            src="WhatsApp%20Video%202026-07-14%20at%2001.18.55.mp4"
+            width="960"
+            height="540"
+          >
+            <p>
+              Your browser does not support HTML5 video.
+              <a href="WhatsApp%20Video%202026-07-14%20at%2001.18.55.mp4">Download the wildlife conservation video</a>.
+            </p>
+          </video>
+        </div>
+
+        <div class="video-controls" role="group" aria-label="Video playback controls">
+          <button
+            id="toggle-video-btn"
+            type="button"
+            class="btn btn-primary"
+            aria-controls="video-wrapper"
+            aria-expanded="true"
+          >
+            Hide Video
+          </button>
+        </div>
+
+        <article class="video-description" aria-labelledby="description-heading">
+          <h2 id="description-heading" class="visually-hidden">About this campaign</h2>
+          <p>
+            Our planet's wildlife faces unprecedented threats from habitat loss, climate change,
+            and poaching. This short film highlights the beauty of endangered species and the
+            urgent need to protect their natural habitats. Join us in safeguarding biodiversity
+            for future generations every action counts.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Wildlife Conservation Organization. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/video-controls.js"></script>
 </body>
 </html>
