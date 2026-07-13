@@ -38,7 +38,6 @@
   function showAndPlayVideo() {
     videoWrapper.classList.remove("is-hidden");
     video.play().catch(function () {
-      /* Autoplay may be blocked; native controls remain available. */
     });
     updateButtonLabel();
   }
